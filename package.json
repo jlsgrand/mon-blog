@@ -1,0 +1,25 @@
+{
+  "name": "mon-blog",
+  "version": "1.0.0",
+  "description": "J'ai décidé de me faire un petit blog en JAMStack avec 11ty et les Github pages.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf ./_site",
+    "build": "npm run clean && eleventy",
+    "start": "eleventy --serve --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jlsgrand/mon-blog.git"
+  },
+  "author": "jlsgrand",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jlsgrand/mon-blog/issues"
+  },
+  "homepage": "https://github.com/jlsgrand/mon-blog#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.0"
+  }
+}
