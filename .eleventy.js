@@ -1,6 +1,9 @@
 module.exports = (eleventyConfig) => {
     eleventyConfig.addPassthroughCopy('assets');
 
+    // Pour que les tags d'un dossier parent soient appliqués au dossier enfant
+    eleventyConfig.setDataDeepMerge(true);
+
     return {
         dir: {
             input: './',
